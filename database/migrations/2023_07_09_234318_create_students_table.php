@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('first_name');
             $table->dateTime('birthday');
-            $table->integer('grade')->nullale(false);
             $table->integer('grade')->nullable(false);
             $table->timestamps();
         });
