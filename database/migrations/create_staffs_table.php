@@ -19,8 +19,7 @@ return new class extends Migration
             $table->string('last_name');
             $table->string('first_name');
             $table->string('password');
-            $table->timestamps('updated_at');
-            $table->timestamps('created_at');
+            $table->timestamps();
         });
     }
 

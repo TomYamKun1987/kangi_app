@@ -21,8 +21,7 @@ return new class extends Migration
             $table->string('day');
             $table->integer('status');
             $table->integer('double_flg');
-            $table->timestamps('updated_at');
-            $table->timestamps('created_at');
+            $table->timestamps();
         });
     }
 

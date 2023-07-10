@@ -20,8 +20,7 @@ return new class extends Migration
             $table->dateTime('post_datetime');
             $table->text('comments');
             $table->integer('edit_flg');
-            $table->timestamps('updated_at');
-            $table->timestamps('created_at');
+            $table->timestamps();
         });
     }
 
