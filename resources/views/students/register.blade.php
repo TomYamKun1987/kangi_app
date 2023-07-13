@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>生徒名一覧</title>
+  <title>生徒情報新規登録</title>
   <h1>咸宜寮管理アプリ</h1>
 </head> -->
 
@@ -28,51 +28,39 @@
   <main>
     <article>
       <div>
-        <h1>生徒名一覧</h1>
+        <h1>生徒情報新規登録</h1>
       </div>
 
       <table>
         <tr>
-          <td>中１</td>
+          <td>姓</td>
           <td>
-             
+             <input type="text" name="last_name">
           </td>
         </tr>
         <tr>
-          <td>中２</td>
+          <td>名</td>
           <td>
-            
+             <input type="text" name="first_name">
           </td>
         </tr>
         <tr>
-          <td>中３</td>
+          <td>生年月日</td>
           <td>
-             
+            <input type="text" name="birthday">
           </td>
         </tr>
         <tr>
-          <td>高１</td>
+          <td>学年配置</td>
           <td>
-             
-          </td>
-        </tr>
-        <tr>
-          <td>高２</td>
-          <td>
-             
-          </td>
-        </tr>
-        <tr>
-          <td>高３</td>
-          <td>
-             
+            <input type="text" name="grade">
           </td>
         </tr>
       </table>
+
+     
     </article>
-    <div>
-        <a href="#">生徒情報の新規登録はこちら</a>
-      <div>
+       <input type="submit" value="登録">
   </main>
 
   @endsection

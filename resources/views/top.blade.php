@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang='ja'>
 
 <head>
@@ -6,7 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ホーム画面</title>
   <h1>咸宜寮管理アプリ</h1>
-</head>
+</head> -->
+
+@extends('layouts.app')
+
+@section('content')
 
 <body>
   <header>
@@ -38,10 +42,4 @@
    </form>
   </main>
 
-  <footer>
-
-  </footer>
-
-</body>
-
-</html>
+  @endsection
