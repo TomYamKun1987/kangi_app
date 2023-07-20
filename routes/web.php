@@ -4,6 +4,10 @@ use Illuminate\Support\Facades\Route;
 
 use App\Http\Controllers\PostController;
 
+use App\Http\Controllers\StudentsController;
+
+use App\Http\Controllers\StudentBlogsController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -29,6 +33,8 @@ Route::get('/top', function(){
 
 Route::get('/posts', [PostController::class, 'index'])->name('posts.index');
 
-Route::get('/students', 'App\Http\Controllers\StudentsController@index');
+Route::get('/students', [StudentsController::class, 'index'])->name('students.index');
 
-Route::get('/students', 'App\Http\Controllers\StudentsController@create');
+Route::get('/studentBlogs', [StudentBlogsController::class, 'index'])->name('studentBlogs.index');
+
+Route::post('/studentBlogs', [StudentBlogsController::class, 'store'])->name('studentBlogs.store');
