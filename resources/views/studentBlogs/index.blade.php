@@ -52,7 +52,7 @@
           <label for="content">本文</label>
           <textarea name="content"></textarea>
         </div>
-            <button type="submit">投稿</button>
+            <input type="submit"></input>
         </form>
       </div>
     </article>

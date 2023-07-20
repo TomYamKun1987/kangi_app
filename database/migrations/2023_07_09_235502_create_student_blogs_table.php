@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('student_blogs', function (Blueprint $table) {
-            $$table->increments('id');
+            $table->increments('id');
             $table->integer('staff_id');
             $table->integer('student_id');
             $table->dateTime('post_datetime');
